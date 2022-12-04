@@ -348,7 +348,9 @@ void part2()
 {
 	long points = 0;
 	
-	for(unsigned i = 0; i < 300; )
+	auto n = sizeof(rucksacks) / sizeof(char const *);
+	
+	for(unsigned i = 0; i < n; )
 	{
 		std::string_view A{rucksacks[i++]};
 		std::string_view B{rucksacks[i++]};
